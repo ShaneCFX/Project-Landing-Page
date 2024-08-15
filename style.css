@@ -9,15 +9,16 @@ html, body {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 20px;
-    background-color: #1f2937;
     height: 100vh; /* Full viewport height */
+    position: relative; /* Required for absolute positioning of .links */
 }
 
 .header {
+    background-color: #1f2937;
     display: flex;
     align-items: center;
     width: 100%; /* Full width to ensure header spans across the container */
-    margin-bottom: 20px; /* Space between header and middle section */
+     /* Space between header and middle section */
 }
 
 .header-image {
@@ -26,13 +27,12 @@ html, body {
 }
 
 .links {
+    position: absolute; /* Position links absolutely within the container */
+    top: 20px; /* Distance from the top of the container */
+    right: 20px; /* Distance from the right of the container */
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: flex-end; /* Align links to the right */
-    width: 100%; /* Full width to align links on the right */
-    margin-bottom: 20px; /* Space between links and middle section */
-    position: absolute;
+    width: auto; /* Auto width to fit content */
 }
 
 .links ul {
@@ -52,25 +52,69 @@ html, body {
 }
 
 .middle {
+    background-color: #1f2937;
     display: flex;
-    justify-content: flex-start;
-    flex-direction: row-reverse;
-    width: 100%; /* Full width to allow for right alignment */
-    
+    flex-direction: column; /* Stack text and subtext vertically */
+    align-items: flex-start; /* Align all content to the left */
+    width: 100%; /* Full width to align content properly */
+    margin-right: 20px; /* Space from the right edge of the container */
 }
 
 .middle-image {
     height: 300px;
     width: 300px;
+    align-self: flex-end; /* Align the image to the right within its container */
+    margin-bottom: 20px; /* Space between image and text */
     margin-right: 20%;
+
 }
 
 .middle-text {
-    margin-right: 40%;
     font-family: cursive;
-    font-weight:800;
+    font-weight: 800;
     font-size: 48px;
-
+    margin-bottom: 10px; /* Space between text and subtext */
+    margin-left: 20%;
+    
 }
 
+.middle-sub {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left; /* Align text to the left */
+    margin-left: 20%;
+    
+}
 
+@media (max-width: 768px) {
+    .links {
+        position: static; /* Remove absolute positioning for better flow on small screens */
+        justify-content: center; /* Center links on smaller screens */
+        margin-bottom: 20px; /* Space between links and other content */
+    }
+
+    .middle {
+        align-items: center; /* Center content on smaller screens */
+        text-align: center; /* Center text on small screens */
+    }
+
+    .middle-image {
+        margin: 0 auto 20px auto; /* Center image with margin on small screens */
+    }
+}
+
+.button {
+    color: #3882F6;
+    display: flex;
+    font-weight: 50;
+    font-size: 12px;
+    background: #3882F6 !important;
+    margin-left: 25%;
+    margin-bottom:3%;
+    margin-top: 3%;
+    transform: scale(1.2);
+    border-radius: 25px;
+    
+    
+}
