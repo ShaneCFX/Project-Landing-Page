@@ -1,0 +1,2 @@
+My first landing page.
+I am not sure how I have whitespace on the left side of the page, and only on some parts of the right. I have tried to figure it out but I can't for some reason. I hope this is passable.
