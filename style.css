@@ -1,6 +1,8 @@
 html, body {
     height: 100%;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
+
 }
 
 .container {
@@ -9,16 +11,16 @@ html, body {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 20px;
-    height: 100vh; /* Full viewport height */
-    position: relative; /* Required for absolute positioning of .links */
+    height: 100vh; 
+    position: relative; 
 }
 
 .header {
     background-color: #1f2937;
     display: flex;
     align-items: center;
-    width: 100%; /* Full width to ensure header spans across the container */
-     /* Space between header and middle section */
+    width: 100%; 
+    
 }
 
 .header-image {
@@ -27,12 +29,12 @@ html, body {
 }
 
 .links {
-    position: absolute; /* Position links absolutely within the container */
-    top: 20px; /* Distance from the top of the container */
-    right: 20px; /* Distance from the right of the container */
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
     display: flex;
-    justify-content: flex-end; /* Align links to the right */
-    width: auto; /* Auto width to fit content */
+    justify-content: flex-end; 
+    width: auto; 
 }
 
 .links ul {
@@ -54,17 +56,17 @@ html, body {
 .middle {
     background-color: #1f2937;
     display: flex;
-    flex-direction: column; /* Stack text and subtext vertically */
-    align-items: flex-start; /* Align all content to the left */
-    width: 100%; /* Full width to align content properly */
-    margin-right: 20px; /* Space from the right edge of the container */
+    flex-direction: column; 
+    align-items: flex-start; 
+    width: 100%; 
+    margin-right: 20px; 
 }
 
 .middle-image {
     height: 300px;
     width: 300px;
-    align-self: flex-end; /* Align the image to the right within its container */
-    margin-bottom: 20px; /* Space between image and text */
+    align-self: flex-end; 
+    margin-bottom: 20px; 
     margin-right: 20%;
 
 }
@@ -73,7 +75,7 @@ html, body {
     font-family: cursive;
     font-weight: 800;
     font-size: 48px;
-    margin-bottom: 10px; /* Space between text and subtext */
+    margin-bottom: 10px; 
     margin-left: 20%;
     
 }
@@ -82,40 +84,41 @@ html, body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
     font-weight: 300;
-    text-align: left; /* Align text to the left */
+    text-align: left; 
     margin-left: 20%;
     
 }
 
 @media (max-width: 768px) {
     .links {
-        position: static; /* Remove absolute positioning for better flow on small screens */
-        justify-content: center; /* Center links on smaller screens */
-        margin-bottom: 20px; /* Space between links and other content */
+        position: static; 
+        justify-content: center;
+        margin-bottom: 20px; 
     }
 
     .middle {
-        align-items: center; /* Center content on smaller screens */
-        text-align: center; /* Center text on small screens */
+        align-items: center;
+        text-align: center;
     }
 
     .middle-image {
-        margin: 0 auto 20px auto; /* Center image with margin on small screens */
+        margin: 0 auto 20px auto;
     }
 }
 
 .button {
-    color: #3882F6;
+    color: white;
     display: flex;
     font-weight: 50;
     font-size: 12px;
-    background-color: black !important;
+    background-color: #3882F6 !important;
     margin-left: 25%;
     margin-bottom:3%;
     margin-top: 3%;
     transform: scale(1.2);
     border-radius: 25px;
     cursor: pointer;
+    border-color: white;
     
     
 }
@@ -200,7 +203,7 @@ html, body {
     padding: 100px;
     width: 100%;
     justify-content: center;
-
+    align-content: center;
 }
 
 .section4-text {
@@ -211,15 +214,23 @@ html, body {
 }
 
 .section4-button {
-    background-color: black;
+    background-color: #3882F6;
     color: white;
-    padding: 15px 32px;
+    border-width: 5px;
     text-align: center;
     cursor: pointer;
-    
+    border-radius: 40%;
     
     margin: 4px 2px;
     
 
 
+}
+
+.end {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
 }
