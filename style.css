@@ -109,7 +109,7 @@ html, body {
     display: flex;
     font-weight: 50;
     font-size: 12px;
-    background: #3882F6 !important;
+    background-color: black !important;
     margin-left: 25%;
     margin-bottom:3%;
     margin-top: 3%;
@@ -117,4 +117,107 @@ html, body {
     border-radius: 25px;
     
     
+}
+
+.section2 {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.section2-header {
+    justify-self: center;
+    align-content: center;
+    font-size: 48px;
+    font-weight: 300px;
+    padding-bottom: 50px;
+}
+
+.blocks {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+.block1 {
+    background-color: purple;
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    border: 40px black;
+    border-radius: 30px;
+    
+}
+
+.block2 {
+    background-color: orange;
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    border: 40px black;
+    border-radius: 30px;
+}
+
+.block3 {
+    background-color: chartreuse;
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    border: 40px red;
+    border-radius: 30px;
+}
+
+.block4 {
+    background-color:   black;
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    border: 40px green;
+    border-radius: 30px;
+}
+
+
+.section3 {
+    padding: 100px;
+    width: 100%;
+    background-color: #e5e7eb;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: black;
+    font-size: 36px;
+}
+
+.section4 {
+    display: flex;
+    flex-direction: row;
+    background-color: #3882F6;
+    padding: 100px;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.section4-text {
+    font-size: 25px;
+    font-style: italic;
+    align-self: flex-start;
+    margin-right: 40%;
+}
+
+.section4-button {
+    background-color: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    
+
+
 }
