@@ -115,6 +115,7 @@ html, body {
     margin-top: 3%;
     transform: scale(1.2);
     border-radius: 25px;
+    cursor: pointer;
     
     
 }
@@ -214,8 +215,9 @@ html, body {
     color: white;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    cursor: pointer;
+    
+    
     margin: 4px 2px;
     
 
